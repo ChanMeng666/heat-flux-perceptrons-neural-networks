@@ -1,42 +1,94 @@
-# Neural Networks: A Journey into Heat Flux & Perceptrons 🔥🏡
+<div align="center">
+ <h1>🧠 Neural Networks: From Theory to Thermal Analysis 🏠</h1>
+ <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
+ <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white"/>
+ <img src="https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white"/>
+ <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white"/>
+ <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white"/>
+</div>
 
-Welcome to my **Neural Network Playground**! If you're passionate about neural networks, data-driven decision making, or just curious about how houses stay warm, you've come to the right place.
+# 🌟 Features
 
-This project is split into two exciting parts:
+### 🎓 Deep Learning from Ground Up
+- Manual implementation of multi-layer feedforward networks
+- Step-by-step visualization of backpropagation
+- Detailed weight update calculations
+- Example-by-example training process
 
-1. **Part 1**: Manual training of a multi-layer feedforward network using a hands-on, example-by-example approach. Yes, we *manually* train the network (because who doesn't love a good challenge?).
-2. **Part 2**: Applying those neural network skills to predict **Heat Flux** into homes, helping architects design the warmest, coziest homes possible 🏠✨.
+### 🏗️ Heat Flux Prediction
+- Multi-layer perceptron model for architectural applications
+- Comparative analysis of different optimization techniques
+- Real-world data analysis and visualization
+- Performance evaluation across multiple metrics
 
-## 🧠 Project Highlights
+### 📊 Comprehensive Analysis Tools
+- Data exploration and visualization
+- Multiple optimization strategies comparison
+- Model performance evaluation
+- Cross-validation and testing frameworks
 
-- **Manual Feedforward Network Training**:
-  - Walk through each step of network training, from weight updates to error calculations. It’s like a neural network workout session — **but with Python**.
+# 🛠️ Technical Implementation
 
-- **Predicting Heat Flux**:
-  - Train and fine-tune a **multi-layer perceptron (MLP)** to predict how much heat a house gets based on its insulation and orientation.
-  - We use powerful optimization techniques like **Stochastic Gradient Descent** and the adaptive **Adagrad** optimizer.
+### Neural Network Components:
+- Multi-layer perceptron architecture
+- Sigmoid activation functions
+- Gradient descent optimization
+- Momentum and adaptive learning rate implementations
 
-- **Visualizations**:
-  - Discover the relationships between insulation, orientation (East, South, North), and heat flux through snazzy plots! Some surprises await, like the strong **negative correlation** between the North orientation and heat influx. Who knew North could be so cold? 🥶
+### Data Processing:
+- MinMax scaling
+- Train/validation/test splitting
+- Feature engineering
+- Performance metrics calculation
 
-## 🎉 Why This Project is Special
+# 📦 Libraries Used
+![Python](https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
-Not only does this project show off technical chops in **neural networks**, but it also uncovers key insights about **building design** using real-world data. Plus, it’s loaded with code that’s fully annotated and easy to follow (because no one likes spaghetti code 🍝).
+# 🚀 Getting Started
 
-## ⚙️ Tools & Techniques
+1. Clone the repository:
+```bash
+git clone https://github.com/ChanMeng666/heat-flux-perceptrons-neural-networks.git
+```
 
-- **Languages & Libraries**: 
-  - Python: `NumPy`, `Pandas`, `Matplotlib`, `Seaborn`, `TensorFlow`
-  - Machine Learning: Feedforward Neural Networks, Multi-Layer Perceptrons
-  - Optimization: **SGD (with learning rates & momentum)**, **Adagrad**
-- **Evaluation Metrics**: 
-  - Mean Square Error (MSE) — because precision is key.
-  - R² (coefficient of determination) — for those beautiful regression models.
-- **Preprocessing**:
-  - **Min-Max Normalization**: Ensuring that all input values are scaled between 0 and 1. Because fairness matters, even for data.
+2. Install required packages:
+```bash
+pip install -r requirements.txt
+```
 
-## 🏆 Achievements & Learnings
+3. Run the Jupyter notebooks:
+```bash
+jupyter notebook
+```
 
-- **Hands-on Training**: No shortcuts here — manually adjusting weights gave deep insights into how neural networks learn.
-- **Optimized Predictions**: Multiple models and trials to achieve the best possible prediction accuracy. Spoiler alert: **lower learning rates with higher momentum** work wonders.
-- **Data Storytelling**: Visuals and graphs that tell the tale of how insulation and orientation impact heat in homes.
+# 📊 Results
+
+- Successful implementation of manually trained neural networks
+- Comparative analysis of different optimization techniques
+- Achieved high accuracy in heat flux predictions
+- Comprehensive visualization of model performance
+
+# 📖 Documentation
+
+The project contains detailed Jupyter notebooks with:
+- Theoretical explanations
+- Step-by-step implementations
+- Visualization of results
+- Performance analysis
+
+# 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+# 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+# 📧 Contact
+
+For questions or feedback, please open an issue in the repository.
