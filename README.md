@@ -7,6 +7,12 @@
  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white"/>
 </div>
 
+<div align="center">
+  <a href="https://huggingface.co/ChanMeng666/heat-flux-perceptrons-neural-networks" target="_blank">
+    <img src="https://img.shields.io/badge/Model-gray?style=for-the-badge&logo=huggingface"/>
+  </a>
+</div>
+
 # 🌟 Features
 
 ### 🎓 Deep Learning from Ground Up
