@@ -98,3 +98,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 # 📧 Contact
 
 For questions or feedback, please open an issue in the repository.
+
+## 🙋‍♀ Author
+
+Created and maintained by [Chan Meng](https://github.com/ChanMeng666).
