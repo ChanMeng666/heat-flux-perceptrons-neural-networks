@@ -44,13 +44,13 @@ Complete implementation from **theory to practice** with detailed mathematical d
 > Explore the visual results showcasing model performance and architectural comparisons.
 
 <div align="center">
-  <img src="model_comparison.png" alt="Model Performance Comparison" width="800"/>
+  <img src="figures/model_comparison.png" alt="Model Performance Comparison" width="800"/>
   <p><em>Comprehensive Model Performance Analysis - Different Architectures and Optimizers</em></p>
 </div>
 
 <div align="center">
-  <img src="prediction_comparison.png" alt="Prediction Accuracy" width="400"/>
-  <img src="scatter_comparison.png" alt="Scatter Plot Analysis" width="400"/>
+  <img src="figures/prediction_comparison.png" alt="Prediction Accuracy" width="400"/>
+  <img src="figures/scatter_comparison.png" alt="Scatter Plot Analysis" width="400"/>
   <p><em>Prediction Accuracy Comparison and Data Distribution Analysis</em></p>
 </div>
 
@@ -58,12 +58,12 @@ Complete implementation from **theory to practice** with detailed mathematical d
 <summary><kbd>📊 More Visualizations</kbd></summary>
 
 <div align="center">
-  <img src="model_results.png" alt="Training Results" width="600"/>
+  <img src="figures/model_results_sgd.png" alt="Training Results" width="600"/>
   <p><em>Training Progress and Validation Curves</em></p>
 </div>
 
 <div align="center">
-  <img src="model_results_adagrad.png" alt="Adagrad Results" width="600"/>
+  <img src="figures/model_results_adagrad.png" alt="Adagrad Results" width="600"/>
   <p><em>Adagrad Optimizer Performance Comparison</em></p>
 </div>
 
@@ -164,7 +164,7 @@ Whether you're a student learning neural networks, a researcher exploring therma
 Experience neural networks from the ground up with complete mathematical derivations and step-by-step backpropagation calculations. Our manual implementation demonstrates every detail of the learning process.
 
 <div align="center">
-  <img src="https://via.placeholder.com/600x300/4CAF50/FFFFFF?text=Manual+Backpropagation+Implementation" alt="Manual Implementation Demo" width="600"/>
+  <img src="figures/model_results_sgd.png" alt="Manual Implementation Demo" width="600"/>
   <p><em>Step-by-step weight updates and gradient calculations</em></p>
 </div>
 
@@ -187,7 +187,7 @@ Key capabilities include:
 Revolutionary thermal analysis system that predicts heat influx in residential buildings using advanced neural network architectures. Multiple configurations tested and optimized for maximum accuracy.
 
 <div align="center">
-  <img src="model_comparison.png" alt="Heat Flux Prediction Results" width="600"/>
+  <img src="figures/model_comparison.png" alt="Heat Flux Prediction Results" width="600"/>
   <p><em>Performance comparison across different network architectures</em></p>
 </div>
 
@@ -359,26 +359,40 @@ sequenceDiagram
 ### Model Components
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x400/2196F3/FFFFFF?text=Neural+Network+Architecture" alt="Architecture Diagram" width="800"/>
-  <p><em>Complete Neural Network Architecture Overview</em></p>
+  <img src="figures/prediction_comparison.png" alt="Prediction Results Overview" width="800"/>
+  <p><em>Prediction Results and Model Performance Overview</em></p>
 </div>
 
 ```
-Project Structure:
-├── Assignment2_part1.ipynb              # Manual NN implementation
-├── Assignment2_part2_1.ipynb            # Data exploration & setup
-├── Assignment2_part2_2_(i)_a_1HiddenNeurons.ipynb  # 1 neuron model
-├── Assignment2_part2_2_(i)_b_3HiddenNeurons.ipynb  # 3 neuron model
-├── Assignment2_part2_2_(i)_b_5HiddenNeurons.ipynb  # 5 neuron model
-├── Assignment2_part2_2_(i)_c&d.ipynb    # Optimization comparison
-├── Assignment2_part2_2_(ii).ipynb       # Advanced analysis
-├── Assignment2_part2_2_(iii).ipynb      # Final evaluation
-├── Heat_Influx_insulation_east_south_north.csv  # Dataset
-├── best_ffnn_model.keras                # Best SGD model
-├── best_heat_flux_model.keras           # Best overall model
-├── best_heat_flux_model_adagrad.keras   # Best Adagrad model
-├── ffnn_trials_results.csv              # All experiment results
-└── *.png                                # Visualization outputs
+heat-flux-perceptrons-neural-networks/
+├── notebooks/
+│   ├── 01_manual_backpropagation.ipynb    # Manual NN with backprop math
+│   ├── 02_data_exploration.ipynb          # Data exploration & preprocessing
+│   ├── 03_model_1_hidden_neuron.ipynb     # 1 hidden neuron architecture
+│   ├── 04_model_3_hidden_neurons.ipynb    # 3 hidden neurons architecture
+│   ├── 05_model_5_hidden_neurons.ipynb    # 5 hidden neurons architecture
+│   ├── 06_optimizer_comparison.ipynb      # SGD vs Adagrad comparison
+│   ├── 07_hyperparameter_tuning.ipynb     # Hyperparameter tuning
+│   └── 08_final_evaluation.ipynb          # Final model evaluation
+├── data/
+│   └── heat_flux_insulation_orientation.csv
+├── models/
+│   ├── best_ffnn_model.keras
+│   ├── best_heat_flux_model_sgd.keras
+│   └── best_heat_flux_model_adagrad.keras
+├── figures/
+│   ├── model_comparison.png
+│   ├── model_results_sgd.png
+│   ├── model_results_adagrad.png
+│   ├── prediction_comparison.png
+│   └── scatter_comparison.png
+├── results/
+│   └── ffnn_trials_results.csv
+├── .gitignore
+├── requirements.txt
+├── README.md
+├── LICENSE
+└── CODE_OF_CONDUCT.md
 ```
 
 ## ⚡️ Performance
@@ -389,7 +403,7 @@ Project Structure:
 ### Model Performance Comparison
 
 <div align="center">
-  <img src="model_comparison.png" alt="Performance Dashboard" width="800"/>
+  <img src="figures/model_comparison.png" alt="Performance Dashboard" width="800"/>
   <p><em>Comprehensive Performance Analysis Across All Architectures</em></p>
 </div>
 
@@ -461,7 +475,7 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install required packages
-pip install tensorflow numpy pandas matplotlib seaborn scikit-learn jupyter
+pip install -r requirements.txt
 ```
 
 **3. Launch Jupyter Environment**
@@ -478,14 +492,14 @@ jupyter lab
 
 **Recommended Execution Order:**
 
-1. **`Assignment2_part1.ipynb`** - Start with manual neural network implementation
-2. **`Assignment2_part2_1.ipynb`** - Explore the heat flux dataset
-3. **`Assignment2_part2_2_(i)_a_1HiddenNeurons.ipynb`** - Single neuron baseline
-4. **`Assignment2_part2_2_(i)_b_3HiddenNeurons.ipynb`** - Three neuron architecture
-5. **`Assignment2_part2_2_(i)_b_5HiddenNeurons.ipynb`** - Five neuron architecture
-6. **`Assignment2_part2_2_(i)_c&d.ipynb`** - Optimization comparison
-7. **`Assignment2_part2_2_(ii).ipynb`** - Advanced analysis
-8. **`Assignment2_part2_2_(iii).ipynb`** - Final evaluation and conclusions
+1. **`notebooks/01_manual_backpropagation.ipynb`** - Manual neural network implementation with backprop math
+2. **`notebooks/02_data_exploration.ipynb`** - Explore the heat flux dataset
+3. **`notebooks/03_model_1_hidden_neuron.ipynb`** - Single neuron baseline
+4. **`notebooks/04_model_3_hidden_neurons.ipynb`** - Three neuron architecture
+5. **`notebooks/05_model_5_hidden_neurons.ipynb`** - Five neuron architecture
+6. **`notebooks/06_optimizer_comparison.ipynb`** - SGD vs Adagrad comparison
+7. **`notebooks/07_hyperparameter_tuning.ipynb`** - Hyperparameter tuning
+8. **`notebooks/08_final_evaluation.ipynb`** - Final evaluation and conclusions
 
 > [!TIP]
 > Each notebook is self-contained but builds upon previous concepts. Run them sequentially for the best learning experience.
@@ -507,7 +521,7 @@ Our dataset contains **319 thermal measurements** from residential buildings wit
 ### Data Characteristics
 
 <div align="center">
-  <img src="https://via.placeholder.com/600x400/FF9800/FFFFFF?text=Dataset+Distribution+Analysis" alt="Data Distribution" width="600"/>
+  <img src="figures/scatter_comparison.png" alt="Data Distribution" width="600"/>
   <p><em>Feature distributions and correlations with heat flux target</em></p>
 </div>
 
@@ -857,5 +871,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [share-linkedin-shield]: https://img.shields.io/badge/-share%20on%20linkedin-black?labelColor=black&logo=linkedin&logoColor=white&style=flat-square
 
 <!-- Images -->
-[image-star]: https://via.placeholder.com/800x200/FFD700/000000?text=⭐+Star+Us+on+GitHub+⭐
+[image-star]: https://img.shields.io/github/stars/ChanMeng666/heat-flux-perceptrons-neural-networks?style=for-the-badge&color=FFD700&labelColor=000000&label=Star+Us+on+GitHub
 </div>
